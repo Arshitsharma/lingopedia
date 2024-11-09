@@ -1,0 +1,85 @@
+.nav-bar {
+  background-color: rgba(248, 241, 228, 1);
+  height: 3vw;
+  display: flex;
+  width: 100%;
+  /* justify-content: space-between; */
+}
+
+.nav-bar-3{
+  background-color: rgba(248, 241, 228, 1);
+  height: 3vw;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.nav_left{
+  display: flex;
+  align-items: center;
+}
+
+.nav_right{
+  display: flex;
+  align-items: center;
+  margin-right: 1vw;
+  margin-top: 0.5vw;
+
+}
+
+.nav_logo {
+  margin-left: 1vw;
+  margin-top: 0.5vw;
+  margin-bottom: 0.6%;
+  /* margin-right:  0.4%; */
+}
+
+.lingo {
+  background-color: transparent;
+  color: #2e5772;
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
+  text-align: center;
+  font-family: "font1";
+  font-size: 1.3vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.36px;
+}
+
+.pedia {
+  background-color: transparent;
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
+  color: #fcc21b;
+  font-family: "font1";
+  font-size: 1.3vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.36px;
+}
+
+.person_account{
+  margin-top: 5px;
+  height: 2rem;
+  width: 2rem;
+}
+
+.logout_switch{
+  cursor: pointer;
+  border-radius: 50%;
+  height: 2.2rem;
+  margin-left: 1rem;
+}
+
+.user_name-nav3{
+  font-size: 1.2rem;
+  color:#114c72;
+}
+@media (max-width: 650px){
+    .nav-bar{
+        width: 100%;
+    }
+}

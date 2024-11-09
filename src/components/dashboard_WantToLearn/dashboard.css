@@ -1,0 +1,107 @@
+.courses_maincontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:flex-start;
+    margin-top: 1rem;
+    width: 100%;
+    background-color: white;
+    width: 95%;
+    margin-left: 1.5rem;
+    border-radius: 20px;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+}
+.mainnnn{
+    background-color: #f8f1e4; 
+    width: 100vw;
+    height: 120vh;
+}
+.courses_beginner{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.6rem;
+    /* margin-left: 2rem; */
+    margin-bottom: 1rem;
+
+}
+.courses_iframe{
+    height: 10rem;
+    width: 20rem;
+    margin-right: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px 0px rgba(10, 60, 95, 0.45);
+}
+.course_heading{
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    color: rgba(10, 60, 95, 1);
+}
+
+  .uploadzone {
+    z-index: 1;
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 6rem;
+    width: 6rem;
+    border: 5px dashed rgb(117, 112, 112);
+    border-radius: 20px;
+    padding: 2rem;
+  }
+
+  
+  .pdf-container {
+    width: 100%;
+    height: 100%;
+    margin-right: 0.5rem;
+  }
+
+  #arrow {
+    color: #f7a60f;
+    margin-left: 0.5rem;
+  }
+  
+  .active {
+    background-color: #5f5959;
+  }
+    
+  .download {
+    height: 100%;
+    width: 10.1rem;
+    border-radius: 20px;
+  }
+  
+  .pdf-container {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+  }
+
+  .embedview{
+    display: flex;
+    justify-content: space-between;
+    color:rgb(18, 60, 90);
+    margin-right: 0.5rem;
+    
+  }
+  #viewww{
+    text-decoration:underline;
+    color:#f7a60f;
+    cursor: pointer;
+  }
+
+  .uploads-pdfs-fetch{
+    overflow: hidden;
+    /* width: 50%; */
+  }
+
+  .uploads-pdfs-fetch::-webkit-scrollbar {
+    width: 0.5px; 
+  }
+  
+  .uploads-pdfs-fetch::-webkit-scrollbar-track {
+    background:transparent;
+  }

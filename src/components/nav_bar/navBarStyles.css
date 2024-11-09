@@ -1,0 +1,133 @@
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #2E5772;
+}
+.nav_logo {
+    margin-left: 0.5vw;
+    margin-top: 0.5vw;
+    margin-bottom: 0.6%;
+    margin-right: 0.4%;
+    height: 2vw;
+  }
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 3vw;
+    background-color:#F8F1E4;
+    
+}
+.item{
+    margin-left: 40px;
+}
+
+.id{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 0.5vw;
+    height: 3vw;
+    background-color: #F8F1E4;
+    
+}
+.item{
+    justify-content: space-around;
+    display: flex;
+    margin-right: 1.5vw;
+}
+.lingo{
+    color: #2E5772;
+
+    text-align: center;
+    font-family: "font1";
+    font-size: 1.3vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.36px;
+    
+}
+.pedia{
+    color: #FCC21B;
+font-family: "font1";
+font-size: 1.3vw;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 1.04px;
+}
+.navmenu{
+    display: flex;
+    align-items:center ;
+    justify-content: space-around;
+    
+}
+.navtoggle div{
+    width: 3rem;
+    height: 0.2rem;
+    margin: 0.4rem;
+    background-color: darkgoldenrod;
+    transition: 0.4s ease-in;
+}
+.navtoggle{
+    cursor: pointer;
+    display: none;
+}
+.navitem{
+    color: #2E5772;
+    text-align: center;
+    font-family: PoetsenOne;
+    font-size: 1.3vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.04px;
+}
+
+.navlink:hover{
+    color: #f7a60f;
+}
+.on{
+    text-decoration: underline;
+    color: #f7a60f;
+}
+.flag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media screen and (max-width:768px){
+    .navtoggle{
+        display: block;
+    }
+    .navmenu{
+        position: fixed;
+        top: 7vh;
+        right: 0;
+        width: 20%;
+        height: 30vh;
+        background: #F8F1E4;
+        flex-direction: column;
+        transform: translateX(100%);
+        transition: 0.5s ease-in;
+    }
+    .navactive{
+        transform: translateX(0);
+    }
+    .toggle .line1{
+        transform: rotate(-45deg) translate(-4px,5px);
+    }
+    .toggle .line2{
+        opacity: 0;
+    }
+    .toggle .line3{
+        transform: rotate(45deg) translate(-4px,-5px);
+    }
+    
+}

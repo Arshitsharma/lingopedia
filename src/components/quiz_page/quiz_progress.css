@@ -1,0 +1,54 @@
+.progress_content{
+    margin-top: 3.5vh;
+    align-items: center;
+    width: 50vw;
+}
+.progress_main{
+    display:flex;
+    margin-right: 10px;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;  
+}
+.progress_main::before{
+    content: "";
+    position: absolute;
+    background-color: #e0e0e0;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    border-radius: 5px;
+    height: 4px;
+    width: 100%;
+    
+    transition: 0.4s ease;
+}
+.progress{
+    position: absolute;
+    background-color: #f7a60f;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    border-radius: 5px;
+    height: 4px;
+    width: 10vw; 
+    transition: 0.4s ease;
+}
+.circle{
+    z-index: 1;
+    background-color: white;
+    color: #e0e0e0;
+    border-radius: 50%;
+    height: 4vh;
+    width: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #e0e0e0;
+    transition: 0.4s ease;
+}
+.circle.active{
+    border-color: #f7a60f;
+    color: #f7a60f;
+}
+

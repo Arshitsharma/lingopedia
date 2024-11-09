@@ -1,0 +1,256 @@
+
+.language {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fefbf5;
+}
+
+.nav-barr {
+  background: #fefbf5;
+  margin-top: 0.5rem;
+  height: 3vw;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.nav_logo {
+  margin-left: 1vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.6%;
+  margin-right: 0.4%;
+  background: white;
+}
+
+.lingo {
+  color: #2e5772;
+  margin-top: 0.85%;
+  margin-bottom: 0.5%;
+  text-align: center;
+  font-family: "font1";
+  font-size: 1.3vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.36px;
+}
+
+.pedia {
+  margin-top: 0.85%;
+  margin-bottom: 0.5%;
+  color: #fcc21b;
+  font-family: "font1";
+  font-size: 1.3vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.36px;
+}
+
+@media (max-width: 650px) {
+  .nav-bar {
+    width: 100%;
+  }
+}
+.language__content {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+.language__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35rem;
+  height: 8rem;
+  margin-top: 1rem;
+}
+.language__text p {
+  color: #173d56;
+  text-align: center;
+  font-family: Pangolin;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+#text {
+  color: #fcc21b;
+  font-family: Pangolin;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+}
+.learn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.learn h1 {
+  color: #1c4560;
+  font-family: "font1";
+  text-align: center;
+  font-size: 53px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.Card {
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  margin-top: 4rem;
+  height: 80vh;
+  margin-bottom: 2rem;
+
+}
+
+.Card__component {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: white;
+  width: 14rem;
+  height: 15rem;
+  border-radius: 10px;
+  object-fit: cover;
+  background: #fff;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.Card__component-title {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  margin-left: 7.5rem;
+  margin-top: 1rem;
+}
+.Card__component-title h3 {
+  background-color: white;
+  color: #000;
+  font-family: Pangolin;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.Card__component-img {
+  border-radius: 10px;
+  display: flex;
+  margin-top: 0;
+  justify-content: flex-start;
+  height: 13rem;
+
+  background-color: white;
+}
+.Card__component-img img {
+  background-color: white;
+  border-radius: 10px;
+  width: 100%;
+  height: 12rem;
+}
+
+.hvr-grow-shadow {
+  transform: perspective(1px) translateZ(0);
+  transition-duration: 0.3s;
+  transition-property: box-shadow, transform;
+}
+
+.hvr-grow-shadow:hover,
+.hvr-grow-shadow:focus,
+.hvr-grow-shadow:active {
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.5);
+  transform: scale(1.1);
+}
+
+
+@media (max-width: 1200px) {
+  .Card {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+  }
+}
+
+@media (max-width: 992px) {
+  .Card {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+  }
+  .learn h1 {
+    font-size: 38px;
+  }
+  .language__text {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .Card {
+    grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));
+  }
+  .learn h1 {
+    font-size: 5vw;
+  }
+  .Card__component {
+    width: 10rem;
+    height: 11rem;
+  }
+  .Card__component-title {
+    margin-left: 4rem;
+  }
+  .Card__component-title h3 {
+    font-size: 21px;
+  }
+  .Card__component-img {
+    height: 8rem;
+  }
+  .Card__component-img img {
+    height: 8rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .Card {
+    gap: 30px;
+    margin-top: 2rem;
+  }
+  .language__text p {
+    font-size: 3vw;
+  }
+
+  #text {
+    font-size: 3vw;
+  }
+
+  .learn h1 {
+    font-size: 5vw;
+  }
+  .Card__component {
+    width: 9rem;
+    height: 11rem;
+  }
+  .Card__component-title {
+    margin-left: 4rem;
+  }
+  .Card__component-title h3 {
+    font-size: 18px;
+  }
+  .Card__component-img {
+    height: 7rem;
+  }
+  .Card__component-img img {
+    height: 7rem;
+  }
+}
